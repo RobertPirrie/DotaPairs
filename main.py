@@ -16,12 +16,12 @@ print(probMethod())
 
 def bruteForce():
 
-    remaining = list(range(7500))
+    remaining = list(range(7503))
     games = 0
 
     while len(remaining) > 375:
         for i in range(20):
-            x = random.randint(0, 7500)
+            x = random.randint(0, 7503)
             if x in remaining:   
                 remaining.remove(x)
         games = games + 1
